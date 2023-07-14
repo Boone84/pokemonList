@@ -3,10 +3,14 @@
 
 <head>
     <title>Pokemon Workshop</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Pokemon List</h1>
     <section class="container">
@@ -14,7 +18,12 @@
     </section>
 
     <h1>Pokemon Stats</h1>
-    <section id="pokemonDetails"></section>
+    <section id="pokemonDetails" class="hidden">
+        <button id="backButton">Back</button>
+        <div id="pokemonInfo"></div>
+    </section>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
